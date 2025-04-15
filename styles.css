@@ -189,7 +189,6 @@
   width: 100%;
   text-align: justify; /* Makes text span left to right cleanly */
 }
-
 /* Mission and Values Sections */
 .mission, .values {
   background-color: #04083d; /* Fixed missing semicolon */
@@ -202,7 +201,6 @@
   flex-direction: column;
   align-items: center;        /* Center content horizontally */
   justify-content: center;    /* Center content vertically */
-  text-align: center;         /* Center all text */
   margin-left: auto;
   margin-right: auto;
 }
@@ -215,20 +213,26 @@
   text-align: center;
 }
 
-/* Paragraph and List Styling */
-.mission p, .values ul {
+/* Paragraph Styling */
+.mission p {
   font-size: 1.1rem;
   color: white;
   line-height: 1.6;
   margin-top: 10px;
-  text-align: center;
+  text-align: justify;      /* Make text spread across */
+  width: 100%;
 }
 
-/* Values List */
+/* Values List Styling */
 .values ul {
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.6;
+  margin-top: 10px;
   list-style-type: none;
   padding-left: 0;
   margin-top: 20px;
+  text-align: center;
 }
 
 .values li {
@@ -237,6 +241,7 @@
   text-align: center;
   color: white;
 }
+
 
 /* Gallery Section */
 .gallery {
