@@ -5,7 +5,10 @@ function showNextSlide() {
   slides[current].classList.remove("active");
   current = (current + 1) % slides.length;
   slides[current].classList.add("active");
+
 }
+
+
 
 setInterval(showNextSlide, 3000); // change image every 3 seconds
 // Get the button
