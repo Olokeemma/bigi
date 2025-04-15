@@ -6,30 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Biggy Monie Construction</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
+  <!-- Navbar -->
   <header class="header">
     <div class="container">
-      <div class="logo">
-        <img src="logo.png" alt="Biggy Monie Logo" />
-      </div>
+      <a href="#" class="logo">
+        <img src="logo2.png" alt="Logo" />
+      </a>
       <nav>
         <ul class="nav-links" id="navLinks">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about-us">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact-us">Contact</a></li>
         </ul>
-        <div class="hamburger" id="hamburger">
-          ☰
-        </div>
+        <div class="hamburger" id="hamburger">☰</div>
       </nav>
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
+    <div class="slider">
+      <img src="1.jpg" class="slide active" alt="Image 1" />
+      <img src="pool.jpg" class="slide" alt="Image 2" />
+      <img src="floor.jpg" class="slide" alt="Image 3" />
+      <img src="cus.jpg" class="slide" alt="Image 4" />
+      <img src="tile.jpg" class="slide" alt="Image 5" />
+    </div>
     <div class="overlay">
       <div class="hero-content">
         <h1>Welcome to Biggy Monie Construction</h1>
@@ -37,340 +45,224 @@
         <a href="#gallery" class="cta-btn">View Our Work</a>
       </div>
     </div>
+    <button id="back-to-top" class="back-to-top-btn" onclick="scrollToTop()">↑ Back to Top</button>
   </section>
-  
 
-  <!-- About Us Section -->
-  <section id="about-us" class="about-us">
+  <section id="about" data-aos="fade-up">
+    <div id="about-us" class="about-us">
+      <div class="container">
+        <h2>About Biggy Monie Construction</h2>
+        <p>At Biggy Monie Construction, we pride ourselves on being a leader in tile installation and custom swimming pool construction. With over a decade of hands-on experience, we specialize in creating elegant, functional spaces for both residential and commercial projects.
+
+          Our team is dedicated to delivering exceptional craftsmanship that goes beyond standard expectations. Whether it's transforming your home with luxurious tile designs or creating a stunning, personalized swimming pool, we bring our expertise, passion, and attention to detail to every project.
+
+          We believe in quality, integrity, and innovation. Our designs aren’t just about aesthetics; they reflect our commitment to durability, functionality, and timeless appeal. Whether it's a small residential project or a large-scale commercial build, we approach every job with professionalism and a desire to exceed your vision.
+
+          Biggy Monie Construction is a name trusted by clients for outstanding service, exceptional results, and an unwavering commitment to making every space truly unique.
+        </p>
+     
+        <!-- Mission & Values Section -->
+        <section id="mission-values" data-aos="zoom-in">
+          <div class="mission">
+            <h3>Our Mission</h3>
+            <p>At Biggy Monie Construction, our mission is to transform spaces into timeless works of art. We are dedicated to delivering exceptional tile installation and building beautiful, durable swimming pools that bring joy, comfort, and value to every home and business we touch. With a passion for craftsmanship, a commitment to quality, and a heart for customer satisfaction, we aim to create stunning environments where memories are made and dreams come to life—one tile and one pool at a time.</p>
+          </div>
+
+          <div class="values">
+            <h3>Our Values</h3>
+            <ul>
+              <li>Commitment to Quality</li>
+              <li>Customer-Centered Approach</li>
+              <li>Innovation and Creativity</li>
+              <li>Integrity and Professionalism</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Your Services content goes here -->
+
+  <section id="services" class="service" data-aos="fade-right">
     <div class="container">
-      <h2>About Biggy Monie Construction</h2>
-     <p>At Biggy Monie Construction, we pride ourselves on being a leader in tile installation and custom swimming pool construction. With over a decade of hands-on experience, we specialize in creating elegant, functional spaces for both residential and commercial projects.
+      <h1 class="section-title">Our Services</h1>
+      <!-- Tiling Service -->
+      <div class="service">
+        <h2>Tiling (Commercial & Residential)</h2>
+        <p>
+          At Biggy Monie Construction, we proudly offer expert tiling services tailored to both commercial and residential spaces. Whether you're updating your home with a stylish new look or outfitting a large-scale commercial property, our skilled team is equipped to handle projects of all sizes and styles. We specialize in everything from sleek, contemporary tile installations to timeless, classic finishes that bring warmth and character to any space.
 
-        Our team is dedicated to delivering exceptional craftsmanship that goes beyond standard expectations. Whether it's transforming your home with luxurious tile designs or creating a stunning, personalized swimming pool, we bring our expertise, passion, and attention to detail to every project.
-        
-        We believe in quality, integrity, and innovation. Our designs aren’t just about aesthetics; they reflect our commitment to durability, functionality, and timeless appeal. Whether it's a small residential project or a large-scale commercial build, we approach every job with professionalism and a desire to exceed your vision.
-        
-        Biggy Monie Construction is a name trusted by clients for outstanding service, exceptional results, and an unwavering commitment to making every space truly unique.</p>
-    </div>
-
-    <div class="mission">
-      <h3>Our Mission</h3>
-      <p>To deliver exceptional craftsmanship and unique designs for every project...</p>
-    </div>
-
-    <div class="values">
-      <h3>Our Values</h3>
-      <ul>
-        <li>Commitment to Quality</li>
-        <li>Customer-Centered Approach</li>
-        <li>Innovation and Creativity</li>
-        <li>Integrity and Professionalism</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="container">
-      <!-- Tile Installation Service -->
-      <div class="service-item">
-        <h3>Tile Installation</h3>
+          Our commitment to excellence means that every tile we lay is done with the utmost precision and care. We use high-quality materials and state-of-the-art techniques to ensure long-lasting durability and flawless results. From floors and walls to intricate backsplashes and feature accents, our tiling solutions are designed to enhance the beauty and functionality of your environment.
+          
+          With a keen eye for design and a dedication to customer satisfaction, we work closely with clients to bring their vision to life—creating spaces that are not only beautiful but also built to stand the test of time.
+        </p>
         <div class="service-images">
-          <img src="wall.jpg" alt="Tile Image 1" class="service-image" />
-          <img src="wall3.jpg" alt="Tile Image 2" class="service-image" />
-          <img src="floor.jpg" alt="Tile Image 3" class="service-image" />
+          <img src="tile.jpg" alt="Commercial Tiling Work" />
+          <img src="tile11.jpg" alt="Residential Tiling Work" />
+          <img src="1.jpg" alt="Commercial Tiling Work" />
+          <img src="2.jpg" alt="Residential Tiling Work" />
         </div>
-        <p>Expert floor and wall tiling services for residential and commercial spaces.</p>
       </div>
 
-      <!-- Swimming Pools Service -->
-      <div class="service-item">
-        <h3>Swimming Pools</h3>
+      <!-- Swimming Pool Construction Service -->
+      <div class="service">
+        <h2>Swimming Pool Construction</h2>
+        <p>
+          Experience the ultimate in luxury with our custom swimming pool construction services. At Biggy Monie Construction, we specialize in designing and building stunning, high-quality pools that are perfectly tailored to meet your unique style, space, and specific needs. Whether you're dreaming of a serene, private oasis in your own backyard or creating a captivating commercial attraction that will leave a lasting impression, we bring your vision to life with unparalleled craftsmanship.
+
+          We take great pride in our attention to detail, working closely with you to understand your preferences and the environment in which the pool will be installed. From luxurious infinity pools and sleek geometric designs to naturalistic lagoon-style pools and everything in between, our team ensures that every pool we build becomes an inviting and beautiful centerpiece.
+          
+          Our expertise goes beyond aesthetics—we focus on functionality, durability, and efficiency, ensuring that your pool is not only visually stunning but also safe, sustainable, and easy to maintain. With a variety of customizable features like waterfalls, lighting, spas, and energy-efficient systems, we create an experience that perfectly complements your lifestyle, whether for relaxation, exercise, or entertainment.
+          
+          Let us help you transform your space into the ultimate backyard retreat or a remarkable commercial amenity that elevates the experience of those who encounter it.
+        </p>
         <div class="service-images">
-          <img src="pool.jpg" alt="Pool Image 1" class="service-image" />
-          <img src="pool2.png" alt="Pool Image 2" class="service-image" />
-          <img src="pool3.png" alt="Pool Image 3" class="service-image" />
+          <img src="pool2.png" alt="Modern Swimming Pool" />
+          <img src="pool5.jpg" alt="Luxury Pool Construction" />
+          <img src="pool3.png" alt="Modern Swimming Pool" />
+          <img src="pool7.jpg" alt="Luxury Pool Construction" />
         </div>
-        <p>Custom swimming pools designed and built to suit any style and space.</p>
       </div>
 
-      <!-- Custom Designs Service -->
-      <div class="service-item">
-        <h3>Custom Designs</h3>
+      <div class="service">
+        <h2>POP Ceiling</h2>
+        <p>
+          Enhance the elegance and ambiance of your interiors with our modern POP (Plaster of Paris) ceiling designs, expertly crafted to transform any space with style, sophistication, and precision. At Biggy Monie Construction, we bring creativity and innovation together to deliver ceiling solutions that not only elevate the visual appeal of your rooms but also reflect contemporary trends and timeless charm.
+
+          Our team of skilled artisans and designers works meticulously to create POP ceiling designs that suit a wide range of interior styles—whether you're aiming for a minimalist modern look, a luxurious decorative pattern, or a bold architectural statement. We offer a diverse selection of design options including recessed lighting effects, layered tray ceilings, elegant moldings, and intricate patterns that add depth and character to any room.
+
+          Every POP ceiling we install is carefully measured, designed, and executed to ensure flawless alignment, smooth finishes, and long-lasting durability. We use only top-grade materials and advanced techniques, guaranteeing a result that is both beautiful and built to endure.
+
+          Whether you're updating a single room, renovating an entire home, or outfitting a commercial property, our modern POP ceiling solutions provide the perfect finishing touch—bringing harmony, elegance, and a touch of luxury to your living or working space.
+        </p>
         <div class="service-images">
-          <img src="cus.jpg" alt="Custom Design Image 1" class="service-image" />
-          <img src="cus2.jpg" alt="Custom Design Image 2" class="service-image" />
-          <img src="cuz3.jpg" alt="Custom Design Image 3" class="service-image" />
+          <img src="pop.jpg" alt="Modern Swimming Pool" />
+          <img src="pop2.png" alt="Luxury Pool Construction" />
+          <img src="pop3.png" alt="Modern Swimming Pool" />
+          <img src="pop5.png" alt="Luxury Pool Construction" />
         </div>
-        <p>Luxury finishes, mosaic patterns, and custom layouts for a unique look.</p>
       </div>
     </div>
   </section>
-  
-    </div>
-  </section>
+
   <!-- Gallery Section -->
-  <div class="container">
-    <div class="gallery-heading">
-      <h2>Our Gallery</h2>
-      <p>Browse through our recent projects and see the quality of our work.</p>
-    </div>>
-      <div class="gallery-grid">
-  
-        <!-- Tile Installation Images (15) -->
-        <div class="category-title">
-          <h3>Tile Installation</h3>
-        </div>
-        <!-- 15 Tile Images -->
-        <div class="gallery-item">
-          <img src="tile0.jpg" alt=" />
-          <div class="overlay">
-           
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="1.jpg" alt=" />
-          <div class="overlay">
-           
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="tile0.jpg" alt="Tile Installation 3" />
-          <div class="overlay">
-          
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="6.jpg" alt="Tile Installation 5" />
-          <div class="overlay">
-          
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="5.jpg" alt="Tile Installation 6" />
-          <div class="overlay">
-           
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="4.jpg" alt="Tile Installation 7" />
-          <div class="overlay">
-           
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="2.jpg" alt="Tile Installation 8" />
-          <div class="overlay">
-            
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="3.jpg" alt="Tile Installation 9" />
-          <div class="overlay">
-            
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="1.jpg" alt="Tile Installation 10" />
-          <div class="overlay">
-          
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="tile12.jpg" alt="Tile Installation 11" />
-          <div class="overlay">
-          
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="tile11.jpg" alt="Tile Installation 12" />
-          <div class="overlay">
-          
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="tile10.jpg" alt="Tile Installation 13" />
-          <div class="overlay">
-        
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="tile0.jpg" alt="Tile Installation 14" />
-          <div class="overlay">
-         
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="tile.jpg" alt="Tile Installation 15" />
-          <div class="overlay">
-           
-          </div>
-        </div>
-  
-        <!-- Swimming Pools Images (6) -->
-        <div class="category-title">
-          <h3>Swimming Pools</h3>
-        </div>
-        <!-- 6 Pool Images -->
-        <div class="gallery-item">
-          <img src="pool2.png" alt="Swimming Pool 1" />
-          <div class="overlay">
-            <p>Swimming Pool Project 1</p>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="pool5.jpg" alt="Swimming Pool 2" />
-          <div class="overlay">
-          
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="pool7.jpg" alt="Swimming Pool 3" />
-          <div class="overlay">
-          
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="pool3.png" alt="Swimming Pool 4" />
-          <div class="overlay">
-          
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="pool2.png" alt="Swimming Pool 5" />
-          <div class="overlay">
-           
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="pool.jpg"Swimming Pool 6" />
-          <div class="overlay">
-           
-          </div>
-        </div>
-  
-        <!-- Custom Design Images (10) -->
-        <div class="category-title">
-         
-        </div>
-        <!-- 10 Custom Design Images -->
-        <div class="gallery-item">
-          <img src="cuz3.jpg" alt="Custom Design 1" />
-          <div class="overlay">
-           
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="cus8.jpg" alt="Custom Design 2" />
-          <div class="overlay">
-           
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="cus.jpg" alt="Custom Design 3" />
-          <div class="overlay">
-          
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="cuz3.jpg" alt="Custom Design 4" />
-          <div class="overlay">
-           
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="cus9.jpg" alt="Custom Design 5" />
-          <div class="overlay">
-            
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="cus8.jpg" alt="Custom Design 6" />
-          <div class="overlay">
-           
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="cus6.jpg" alt="Custom Design 7" />
-          <div class="overlay">
-           
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="cuz3.jpg" alt="Custom Design 8" />
-          <div class="overlay">
-           
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="cus2.jpg" alt="Custom Design 9" />
-          <div class="overlay">
-            
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="cus.jpg" alt="Custom Design 10" />
-          <div class="overlay">
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="gallery-heading">
+        <h2>Our Gallery</h2>
+        <p>Browse through our recent projects and see the quality of our work.</p>
+      </div>
 
-          </div>
-    
-          <section id="contact-us" class="contact-us">
-            <div class="container">
-              <h2>Contact Us</h2>
-              <p>We'd love to hear from you! Feel free to reach out to us through any of the following methods.</p>
-              
-              <!-- Contact Information -->
-              <div class="contact-info">
-                <div class="info-item">
-                  <h3>Phone</h3>
-                  <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
-                </div>
-                
-                <div class="info-item">
-                  <h3>Address</h3>
-                  <p>1234 Main St, Anytown, USA</p>
-                </div>
-                
-                <div class="info-item">
-                  <h3>WhatsApp</h3>
-                  <p><a href="https://wa.me/+2348143819183" target="_blank">Chat with us on WhatsApp</a></p>
-                </div>
-                
-                <div class="info-item">
-                  <h3>Follow us</h3>
-                  <p>
-                    <a href="https://facebook.com/https://www.facebook.com/profile.php?id=100093294190223&mibextid=ZbWKwL" target="_blank" class="social-icon facebook">Facebook</a>
-                  </p>
-                </div>
-              </div>
-              
-              <!-- Contact Form -->
-              <form action="#" method="POST">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" placeholder="Your Name" required />
-                </div>
-                
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" placeholder="Your Email" required />
-                </div>
-                
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                </div>
-                
-                <button type="submit" class="cta-btn">Send Message</button>
-              </form>
-            </div>
-          </section>
-          
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="tile0.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="1.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="tile12.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="tile.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="1.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="2.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="cus.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="cus6.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="cus9.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="pool.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="pool2.png" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="pool3.png" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="pool5.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="pool7.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="tile11.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="tile12.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="tile.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="14.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="pop7.png" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="floor.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="cuz3.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="14.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="7.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="3.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="4.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="wall3.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="tile10.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="floor.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="wall.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="tile12.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="6.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="new.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="new2.jpg" alt="Tile Installation" /></div>
+        <div class="gallery-item"><img src="1.jpg" alt="Tile Installation" /></div>
+      </div>
+    </div>
   </section>
-  
+  <!-- Contact Us Section -->
+<section id="contact-us" class="contact-us">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Feel free to reach out to us through any of the following methods:</p>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <div class="info-item">
+        <h3>Address</h3>
+        <p>AUCHI, EDO STATE</p>
+      </div>
+      <div class="info-item">
+        <h3>Phone</h3>
+        <p><a href="tel:+2348143819183"><i class="fas fa-phone-alt"></i> +2348143819183</a></p>
+      </div>
+      <div class="info-item">
+        <h3>WhatsApp</h3>
+        <p>
+          <a href="https://wa.me/+2348143819183" target="_blank">
+            <img src="whatsap.png" alt="WhatsApp" /> Chat with us on WhatsApp
+          </a>
+        </p>
+      </div>
+      <div class="info-item">
+        <h3>Facebook</h3>
+        <p>
+          <a href="https://www.facebook.com/profile.php?id=100093294190223&mibextid=ZbWKwL" target="_blank">
+            <img src="fff.png" alt="Facebook" /> Visit our Facebook Page
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="#" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit" class="cta-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Biggy Monie Construction. All rights reserved.</p>
+  </div>
+</footer>
+
+
+ 
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
-
